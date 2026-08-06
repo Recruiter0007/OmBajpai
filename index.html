@@ -61,8 +61,20 @@
     .contact p{color:#d3dfec}
     .contact-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
     footer{padding:30px 0 45px;text-align:center;color:var(--muted);font-size:13px}
+
+    .testimonials{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:30px}
+    .testimonial{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 8px 25px rgba(15,35,60,.04)}
+    .person{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+    .avatar{width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid #e5eaf1;flex:0 0 auto}
+    .person h4{margin:0;color:var(--navy);font-size:18px}
+    .person .role{color:var(--muted);font-size:13px;line-height:1.35;margin-top:2px}
+    .quote{margin:0;color:#435166;font-size:15px}
+    .quote:before{content:"“";font-size:34px;line-height:0;vertical-align:-9px;color:var(--accent);margin-right:4px}
+    .featured-quote{grid-column:span 2}
+
     @media(max-width:800px){
-      .hero,.two,.grid{grid-template-columns:1fr}
+      .hero,.two,.grid,.testimonials{grid-template-columns:1fr}
+      .featured-quote{grid-column:span 1}
       .links{display:none}
       header{padding-top:65px}
       section{padding:55px 0}
@@ -75,7 +87,7 @@
     <a class="brand" href="#top">OM BAJPAI</a>
     <div class="links">
       <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a>
-      <a href="#certifications">Certifications</a><a href="#contact">Contact</a>
+      <a href="#certifications">Certifications</a><a href="#recommendations">Recommendations</a><a href="#contact">Contact</a>
     </div>
   </div>
 </nav>
@@ -183,6 +195,44 @@
       <div class="card" style="margin-top:14px"><h4>Bachelor of Commerce</h4><p>University of Lucknow</p></div>
     </div>
   </div>
+</section>
+
+
+<section id="recommendations">
+<div class="wrap">
+<div class="section-title">Stakeholder Recommendations</div>
+<h3>What leaders & colleagues say</h3>
+<p class="lead">Feedback from hiring leaders, stakeholders and talent acquisition colleagues I have partnered with.</p>
+<div class="testimonials"><article class="testimonial">
+      <div class="person"><img class="avatar" src="assets/chris-murphy.jpg" alt="Chris Murphy">
+      <div><h4>Chris Murphy</h4><div class="role">Group Vice President at IDC</div></div></div>
+      <p class="quote">I worked with Om at IDC and he was invaluable in creating a quick and strong pipeline of candidates when we were recently hiring for a critical role. Om was proactive and responsive. We got the candidate quickly and he's already getting onboarded. Great experience working with Om!</p>
+    </article><article class="testimonial">
+      <div class="person"><img class="avatar" src="assets/sharath-srinivasamurthy.jpg" alt="Sharath Srinivasamurthy">
+      <div><h4>Sharath Srinivasamurthy</h4><div class="role">Associate Vice President, IDC | APMP Board Member | CoE Leader | Analyst | Speaker</div></div></div>
+      <p class="quote">Had the opportunity work with Om on some of the urgent and critical hiring requirements we had. He is diligent, understands the needs of the business well, quick in sourcing, and closes the loop to make it happen. Commitment level is high and I wish you all the best in his career.</p>
+    </article><article class="testimonial featured-quote">
+      <div class="person"><img class="avatar" src="assets/sughand-tolani.jpg" alt="Sughand Tolani">
+      <div><h4>Sughand Tolani</h4><div class="role">Global Audience Development Head | Conference Director | Project Management, Event Strategy & B2B Marketing</div></div></div>
+      <p class="quote">It was a pleasure working with you as our Talent Acquisition Partner at IDC. You consistently demonstrated professionalism in every interaction, with clear, timely communication and a proactive approach throughout the hiring process.<br><br>What stood out most was your ability to quickly understand our hiring requirements and identify the right candidates who matched both the technical needs and the team culture. You were always responsive, solution-oriented, and committed to ensuring we had a smooth and efficient recruitment experience.<br><br>I truly appreciated your partnership and would highly recommend you to any organization looking for a reliable, professional, and results-driven talent acquisition expert.</p>
+    </article><article class="testimonial">
+      <div class="person"><img class="avatar" src="assets/elizabeth-chan.jpg" alt="Elizabeth Chan">
+      <div><h4>Elizabeth Chan</h4><div class="role">Sr Director, Customer Success at IDC</div></div></div>
+      <p class="quote">I had the pleasure of working with Om for our talent acquisition needs. He understands the requirements, is quick to respond, provides helpful suggestions to improve outcomes, is dependable, and is highly collaborative. Thank you, Om, for all your support.</p>
+    </article><article class="testimonial">
+      <div class="person"><img class="avatar" src="assets/archana-kurup.jpg" alt="Archana Kurup">
+      <div><h4>Archana Kurup</h4><div class="role">Talent Acquisition | Driving Lateral Tech Hiring Across Pan India</div></div></div>
+      <p class="quote">I managed Om in the sourcing team and found him to be smart, professional, and highly committed. His strong work ethic made him a dependable contributor. He consistently approached tasks with seriousness and delivered reliable results. I highly recommend him for any role requiring commitment and excellence.</p>
+    </article><article class="testimonial">
+      <div class="person"><img class="avatar" src="assets/silvia-kubalova.jpg" alt="Silvia Kubalova">
+      <div><h4>Silvia Kubalova</h4><div class="role">Senior Talent Acquisition Partner | Senior Consultant</div></div></div>
+      <p class="quote">I had the pleasure of working with Om and can highly recommend him as a recruiter and colleague. He is always helpful, collaborative, and a true team player. Om builds strong relationships, brings a positive attitude to everything he does, and is always willing to go the extra mile to support both candidates and colleagues.</p>
+    </article><article class="testimonial">
+      <div class="person"><img class="avatar" src="assets/mahbuba-khan.jpg" alt="Mahbuba Khan">
+      <div><h4>Mahbuba Khan</h4><div class="role">Talent Acquisition Partner | MBA in International Business</div></div></div>
+      <p class="quote">I had the pleasure of working with Om, and I can confidently say he is one of the most sincere, dedicated, and dependable professionals I've had the opportunity to collaborate with.<br><br>As a recruiter, Om consistently demonstrates a deep understanding of both business needs and candidate aspirations. His ability to identify the right talent, build strong relationships, and ensure a positive hiring experience is truly commendable.</p>
+    </article></div>
+</div>
 </section>
 
 <section id="contact">
